@@ -11,8 +11,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import confusion_matrix
 
 #Data Setup
-x_train = pd.read_csv('C:\Users\GChristanto\Documents\Kuliah\Mata Kuliah\Semester 5\Basis Data\Tugas\Tugas Program\Train.csv')
-x_test = pd.read_csv('C:\Users\GChristanto\Documents\Kuliah\Mata Kuliah\Semester 5\Basis Data\Tugas\Tugas Program\Test.csv')
+x_train = pd.read_csv('train.csv')
+x_test = pd.read_csv('test.csv')
 y_train = x_train['target'].ravel()
 
 del x_train['target']
